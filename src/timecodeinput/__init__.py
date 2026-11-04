@@ -1,1 +1,1 @@
-from _timecode_input import TimecodeInputController
+from ._timecode_input import TimecodeInputController
