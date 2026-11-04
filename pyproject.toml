@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resolve-ui-timecode-input"
+version = "0.1.0"
+description = "Timecode Input controller for Davinci Resolve"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "GPL-3.0-or-later" }
+authors = [
+    { name = "Michael Jordan", email = "michael@glowingpixel.com" }
+]
+dependencies = [
+    "resolve-common @ git+https://github.com/mjiggidy/resolve_common.git@v0.2",
+    "timecode @ git+https://github.com/mjiggidy/timecode.git@v1.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
